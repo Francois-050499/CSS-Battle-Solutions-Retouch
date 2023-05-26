@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Battle Solutions</title>
+</head>
+
+<body>
+
+    <!-- Please refer to ... -->
+
+    <!-- #47. Colona Virus -->
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <span></span>
+
+    <style>
+        body {
+            background-color: #1A4341;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #F3AC3C;
+            border-radius: 50%;
+        }
+
+        div:nth-of-type(1),
+        div:nth-of-type(2),
+        div:nth-of-type(3) {
+            position: absolute;
+            background-color: #998235;
+            border-radius: 50%;
+        }
+
+        div:nth-of-type(1) {
+            transform: translate(-15px, -15px);
+            width: 30px;
+            height: 30px;
+        }
+
+        div:nth-of-type(2) {
+            transform: translate(0px, 25px);
+            width: 20px;
+            height: 20px;
+        }
+
+        div:nth-of-type(3) {
+            transform: translate(25px, -25px);
+            width: 10px;
+            height: 10px;
+        }
+
+        span,
+        span::before,
+        span::after {
+            position: absolute;
+            width: 10px;
+            height: 180px;
+            background-color: #F3AC3C;
+            z-index: -1;
+            border-radius: 5px;
+        }
+
+        span {
+            transform: translate(0px, -10px);
+        }
+
+        span::before {
+            content: "";
+            transform: translate(9px, 5px) rotate(60deg);
+        }
+
+        span::after {
+            content: "";
+            transform: translate(9px, 15px) rotate(-60deg);
+        }
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #48. Wash Your Hands -->
+
+    <div></div>
+    <div></div>
+
+    <style>
+        body {
+            background-color: #293462;
+            position: relative;
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        div:nth-of-type(1) {
+            transform: translate(-100px, -60px);
+            width: 200px;
+            height: 100px;
+            background-color: #FE5F55;
+            border-radius: 20px;
+            box-shadow: 0 20px 0 0 #A64942;
+        }
+
+        div:nth-of-type(2) {
+            transform: translate(-70px, -30px);
+            width: 140px;
+            height: 40px;
+            background-color: #A64942;
+            border-radius: 20px;
+        }
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #49. Stay at Home -->
+
+    <div class="roof"></div>
+    <div class="square">
+        <span class="window"></span>
+        <span class="door"></span>
+    </div>
+
+    <style>
+        body {
+            background-color: #6592CF;
+            position: relative;
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .roof {
+            transform: translate(-100px, -100px);
+            border-right: 100px solid #6592CF;
+            border-left: 100px solid #6592CF;
+            border-bottom: 100px solid #243D83;
+        }
+
+        .square {
+            transform: translate(-75px, -10px);
+            width: 150px;
+            height: 110px;
+            background-color: #243D83;
+            border-radius: 10px;
+        }
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .window {
+            transform: translate(-50px, -50px);
+            width: 100px;
+            height: 10px;
+            background-color: #EEB850;
+            border-radius: 10px;
+        }
+
+        .door {
+            transform: translate(-25px, 5px);
+            width: 50px;
+            height: 50px;
+            background-color: #EEB850;
+            border-radius: 10px 10px 0 0
+        }
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #50. Use Hand Sanitizer -->
+
+    <div class="bottle">
+        <span class="bottle-mark">
+            <span class="bottle-parts"></span>
+            <span class="bottle-tips"></span>
+            <span class="mark-one"></span>
+            <span class="mark-two"></span>
+        </span>
+    </div>
+
+    <div class="bottle-push">
+        <span class="bottle-enter"></span>
+        <span class="bottle-drops"></span>
+    </div>
+
+    <style>
+        body {
+            background-color: #1A4341;
+            position: relative;
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .bottle {
+            transform: translate(-50%, -40px);
+            width: 100px;
+            height: 140px;
+            background-color: #F3AC3C;
+            border-radius: 20px;
+        }
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .bottle-mark {
+            transform: translate(-50%, -10px);
+            width: 100px;
+            height: 80px;
+            background-color: #998235;
+            border-radius: 0px 0px 20px 20px;
+        }
+
+        .mark-one,
+        .mark-two {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .mark-one {
+            transform: translate(-50px, -70px);
+            background-color: #998235;
+        }
+
+        .mark-two {
+            transform: translate(0px, -70px);
+            background-color: #F3AC3C;
+        }
+
+        .bottle-parts {
+            transform: translate(-50%, -120px);
+            width: 50px;
+            height: 50px;
+            background-color: #F3AC3C;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .bottle-tips {
+            transform: translate(-50%, -140px);
+            width: 20px;
+            height: 20px;
+            background-color: #F3AC3C;
+        }
+
+        .bottle-push {
+            transform: translate(-50px, -100px);
+            width: 150px;
+            height: 20px;
+            background-color: #F3AC3C;
+            border-radius: 20px 20px 0 20px;
+        }
+
+        .bottle-enter {
+            transform: translate(55px, 0px);
+            width: 20px;
+            height: 30px;
+            background-color: #F3AC3C;
+            border-radius: 20px;
+        }
+
+        .bottle-drops {
+            transform: translate(55px, 40px);
+            width: 20px;
+            height: 20px;
+            background-color: #998235;
+            border-radius: 20px;
+            box-shadow: 0 30px 0 0 #998235;
+        }
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #51. Wear a Mask -->
+
+    <div>
+        <span class="mask-line"></span>
+        <span class="mask-circle"></span>
+        <span class="mask-hands-left"></span>
+        <span class="mask-hands-right"></span>
+    </div>
+
+    <style>
+        body {
+            background-color: #293462;
+            position: relative;
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 100px;
+            background-color: #FFF1C1;
+            border-radius: 0 0 50px 50px;
+        }
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .mask-line {
+            transform: translate(-55px, -30px);
+            width: 40px;
+            height: 10px;
+            background-color: #FE5F55;
+            border-radius: 50px;
+            box-shadow: 0 20px 0 0 #FE5F55;
+        }
+
+        .mask-circle {
+            transform: translate(15px, -10px);
+            width: 40px;
+            height: 40px;
+            background-color: #FE5F55;
+            border-radius: 50%;
+        }
+
+        .mask-hands-left,
+        .mask-hands-right {
+            width: 50px;
+            height: 40px;
+            border: 10px solid #FFF1C1;
+            background-color: #293462;
+        }
+
+        .mask-hands-left {
+            transform: translate(-135px, -50px);
+            border-radius: 50px 0 0 50px;
+        }
+
+        .mask-hands-right {
+            transform: translate(65px, -50px);
+            border-radius: 0 50px 50px 0px;
+        }
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #52. Break the chain -->
+
+    <div></div>
+    <div></div>
+
+    <style>
+    body {
+        background-color: #6592CF;
+        position: relative;
+    }
+    
+    div {
+        position: absolute;
+        top: 50%;
+        left:50%;
+    }
+    
+    div:nth-of-type(1) {
+        transform: translate(-155px,-10px);
+        width: 10px;
+        height: 50px;
+        z-index: 5;
+        background-color: #243D83;
+        box-shadow: 45px 0 0 0 #243D83,
+                    90px 0 0 0 #243D83,
+                    165px 0 0 0 #243D83,
+                    210px 0 0 0 #243D83,
+                    255px 0 0 0 #243D83,
+                    300px 0 0 0 #243D83;
+    }
+    
+    div:nth-of-type(2) {
+        transform: translate(-160px,-20px);
+        width: 20px;
+        height: 20px;
+        background-color: #243D83;
+        border-radius: 50%;
+        box-shadow: 0 0 0 10px #EEB850,
+                    45px 0 0 0 #243D83,
+                    45px -10px 0 20px #EEB850,
+                    90px 0 0 0 #243D83,
+                    90px 0 0 10px #EEB850,
+                    165px 0 0 0 #243D83,
+                    210px 0 0 0 #243D83,
+                    255px 0 0 0 #243D83,
+                    300px 0 0 0 #243D83;
+    }
+    </style>
+    
+    <!-------------------------------->
+</body>
+
+</html>

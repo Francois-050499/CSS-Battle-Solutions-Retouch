@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Battle Solutions</title>
+</head>
+<body>
+
+    <!-- Please refer to ... -->
+
+
+    <!-- #1. Simply Square -->
+
+    <div></div>
+
+    <style>
+
+    * {
+        margin: 0;
+    }
+
+    body {
+        background-color: #5d3a3a;
+    }
+
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: #b5e0ba;
+    }
+
+    </style>
+
+    <!-------------------------------->
+
+
+    <!-- #2. Carrom -->
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <style>
+
+    body {
+        background-color: #62374e;
+        position: relative;
+    }
+
+    div {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: #fdc57b;
+    }
+
+    div:nth-child(1) {
+        top: 42px;
+        left: 42px;
+    }
+
+    div:nth-child(2) {
+        bottom: 42px;
+        left: 42px;
+    }
+
+    div:nth-child(3) {
+        top: 42px;
+        right: 42px;
+    }
+
+    div:nth-child(4) {
+        bottom: 42px;
+        right: 42px;
+    }
+
+    </style>
+
+    <!-------------------------------->
+
+
+    <!-- #3.Push Button  -->
+
+    <div class="rectangle"></div>
+    <div class="circle-big"></div>
+    <div class="circle-middle"></div>
+    <div class="circle-smail"></div>
+
+    <style>
+
+    body {
+        background-color: #6592CF;
+        position: relative;
+    }
+
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .rectangle {
+        width: 300px;
+        height: 150px;
+        background-color: #243D83;
+    }
+
+    .circle-big {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-color: #6592CF;
+    }
+
+    .circle-middle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #243D83;
+    }
+
+    .circle-smail {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #EEB850;
+    }
+    
+    </style>
+
+    <!-------------------------------->
+
+
+    <!-- #4. Ups n Downs -->
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <style>
+
+    body {
+        background-color: #62306D;
+        position: relative;
+    }
+
+    div {
+        width: 100px;
+        height: 100px;
+        background: #F7EC7D;
+        border-radius: 50% 50% 0 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-100%);
+    }
+
+    div:nth-child(1) {
+        border-radius: 0 0 50% 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-150%,0%);
+    }
+
+    div:nth-child(3) {
+        border-radius: 0 0 50% 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%,0%);
+    }
+
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #5. Acid Rain -->
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <style>
+
+    body {
+        background-color: #0B2429;
+        position: relative;
+    }
+    
+    div {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background-color: #998235;
+        border-radius: 50% 0 50% 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    div:nth-child(1) {
+        background-color: #F3AC3C;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(0%,-100%);
+    }
+
+    div:nth-child(3) {
+        background-color: #F3AC3C;
+        border-radius: 50% 0 50% 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%,0%);
+    }
+
+    </style>
+
+    <!-------------------------------->
+
+
+    <!-- #6. Missing Slice -->
+
+    <div class="sector-top-left"></div>
+    <div class="sector-top-right"></div>
+    <div class="sector-bottom-left"></div>
+
+    <style>
+
+    body {
+        background-color: #E3516E;
+        position: relative;
+    }
+    
+    div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .sector-top-left {
+        background: #51B5A9;
+        border-top-left-radius: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%,-100%);
+    }
+
+    .sector-top-right {
+        background: #FADE8B;
+        border-top-right-radius: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-0%,-100%);
+    }
+
+    .sector-bottom-left {
+        background: #F7F3D7;
+        border-bottom-left-radius: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%,0%);
+    }
+    
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #7. Leafy Trail -->
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <style>
+
+    body {
+        background-color: #0B2429;
+        position: relative;
+    }
+    
+    div {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #998235;
+        border-radius: 67% 0%; 
+    }
+
+    div:nth-child(1) {
+        transform: translate(-125px,-50%);
+        background: #1A4341;
+        border-radius: 67% 0%;
+    }
+
+    div:nth-child(3) {
+        transform: translate(-25px,-50%);
+        background: #F3AC3C;
+        border-radius: 67% 0%;
+    }
+
+    </style>  
+
+    <!-------------------------------->
+
+    <!-- #8. Forking Crazy -->
+
+    <div class="fork-bottom"></div>
+    <div class="fork-center"></div>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <style>
+
+    body {
+        background-color: #6592CF;
+        position: relative;
+    }
+    
+    .fork-bottom {
+        position: absolute;
+        width: 20px;
+        height: 70px;
+        background-color: #060F55;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%,20%);
+    }
+
+    .fork-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-40px);
+        width: 140px;
+        height: 140px;
+        background-color: #060F55;
+        border-radius: 100%
+    }
+
+    span:nth-child(odd) {
+        position: absolute;
+        width: 20px;
+        height: 140px;
+        background-color: #060F55;
+        border-radius: 20px;
+        top: 14.75%;
+    }
+
+    span:nth-child(even) {
+        position: absolute;
+        width: 20px;
+        height: 110px;
+        background-color: #6592CF;
+        border-radius: 20px;
+        top: 14.75%;
+    }
+
+    span:nth-child(1) {
+        left: 121.5px;
+    }
+
+    span:nth-child(2) {
+        left: 141.5px;
+    }
+
+    span:nth-child(3) {
+        left: 161.5px;
+    }
+
+    span:nth-child(4) {
+        left: 181.5px;
+    }
+
+    span:nth-child(5) {
+        left: 201.5px;
+    }
+
+    span:nth-child(6) {
+        left: 221.5px;
+    }
+
+    span:nth-child(7) {
+        left: 241.5px;
+    }
+
+    </style> 
+
+    <!-------------------------------->
+
+    <!-- #9. Tesseract -->
+
+    <div class="base-square"></div>
+    <div class="back-square"></div>
+    <div class="middle-square"></div>
+    <div class="circle"></div>
+
+    <style>
+
+    * {
+        margin: 0;
+    }
+    
+    body {
+        background-color: #222730;
+        position: relative;
+    }
+    
+    
+    .base-square {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        height: 150px;
+        background-color: #4CAAB3;
+    }
+
+    .back-square {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+        width: 250px;
+        height: 250px;
+        background-color: #222730;
+    }
+
+    .middle-square {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+        width: 150px;
+        height: 150px;
+        background-color: #4CAAB3;
+    }
+
+    .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 50px;
+        height: 50px;
+        background-color: #393E46;
+        border-radius: 50%;
+    }
+    
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #10. Cloaked Spirits -->
+
+    <div class="bottom">
+        <span></span>
+    </div>
+    <div class="center"></div>
+
+    <style>
+
+    body {
+        background-color: #62306D;
+        position: relative;
+    }
+
+    * {
+        margin: 0;
+    }
+    
+    .bottom {
+        position: absolute;
+        width: 300px;
+        height: 100px;
+        background-color: #F7EC7D;
+        margin: 200px 0px 0 50px; 
+    }
+
+    .bottom::before,
+    .bottom::after {
+        content: "";
+        position: absolute;
+        transform: translate(-50%,-50%);
+        width: 100px;
+        height: 100px;
+        background-color: #AA445F;
+        border-radius: 100%;
+    }
+
+    .bottom span::before,
+    .bottom span::after {
+        content: "";
+        position: absolute;
+        transform: translate(-50%,-50%);
+        width: 60px;
+        height: 60px;
+        background-color: #E38F66;
+        border-radius: 100%;
+        z-index: 5;
+    }
+
+    .bottom::before {
+        top: 0%;
+        left: 50px;
+    }
+
+    .bottom span::before {
+        top: 0%;
+        left: 50px;
+    }
+
+    .bottom::after {
+        top: 0%;
+        left: 250px;
+    }
+
+    .bottom span::after {
+        top: 0%;
+        left: 250px;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100px;
+        height: 100px;
+        background-color: #F7EC7D;
+    }
+
+    .center::before,
+    .center::after {
+        position: absolute;
+        content: "";
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #E38F66;
+        border-radius: 100%;
+    }
+
+    .center::before {
+        width: 100px;
+        height: 100px;
+    }
+
+    .center::after {
+        width: 60px;
+        height: 60px;
+        background-color: #AA445F;
+    }
+
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #11. Eye of Sauron -->
+
+    <div class="circle">
+        <span></span>
+    </div>
+    <div></div>
+    <div></div>
+
+    <style>
+
+    body {
+        background-color: #191210;
+        position: relative;
+    }
+    
+    .circle,
+    div:nth-child(2),
+    div:nth-child(3) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 100%;
+    }
+
+    .circle {
+        width: 140px;
+        height: 140px;
+        background-color: #ECA03D;
+    }
+
+    .circle::before,
+    .circle::after {
+        content: "";
+        position: absolute;
+        background-color: #ECA03D;
+    }
+
+    .circle::before {
+        width: 100px;
+        height: 50px;
+        top: 70px;
+        left: -80px;
+        border-radius: 0 0 50px 50px;
+    }
+
+    .circle::after {
+        width: 100px;
+        height: 50px;
+        top: 20px;
+        left: 120px;
+        border-radius: 50px 50px 0 0;
+    }
+
+    .circle span::before,
+    .circle span::after {
+        content: "";
+        position: absolute;
+        background-color: #191210;
+        border-radius: 100%;
+    }
+
+    .circle span::before {
+        top: 40px;
+        left: -60px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .circle span::after {
+        top: 40px;
+        left: 140px;
+        width: 60px;
+        height: 60px;
+        z-index: 5;
+    }
+    
+
+    div:nth-child(2) {
+        width: 100px;
+        height: 100px;
+        background-color: #191210;
+    }
+
+    div:nth-child(3) {
+        width: 50px;
+        height: 50px;
+        background-color: #84271C;
+    }
+
+    </style>
+    
+    <!-------------------------------->
+
+    <!-- #12. Wiggly Moustache -->
+
+    <div>
+        <span class="circle-one"></span>
+    </div>
+    <div>
+        <span class="circle-two"></span>
+    </div>
+    <div>
+        <span class="circle-three"></span>
+    </div>
+
+    <style>
+
+    body {
+        background-color: #F5D6B4;
+        position: relative;
+    }
+    
+    div,
+    div:nth-child(1),
+    div:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 50px;
+        background-color: #D86F45;
+    }
+
+    div {
+        transform: translate(-50%,-100%);
+        border-radius: 50px 50px 0 0;
+    }
+
+    div:nth-child(1) {
+        transform: translate(-130%,0%);
+        border-radius: 0 0 50px 50px;
+    }
+
+    div:nth-child(2) {
+        transform: translate(30%,0%);
+        border-radius: 0 0 50px 50px;
+    }
+    
+    .circle-one,
+    .circle-two,
+    .circle-three {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background-color: #F5D6B4;
+    }
+
+    .circle-one,
+    .circle-two {
+        transform: translate(20px,-55px);
+    }
+
+    .circle-one::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 20px;
+        height: 15px;
+        border-radius: 200px 200px 0 0;
+        background-color: #D86F45;
+        transform: translate(-20px,-10px);
+        box-shadow: 240px 0 0 0 #D86F45;
+    }
+    
+    .circle-three {
+        transform: translate(20px,-5px);
+    }
+
+    </style>
+    
+    <!-------------------------------->
+</body>
+</html>
