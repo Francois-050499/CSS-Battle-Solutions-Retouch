@@ -14,22 +14,15 @@
     <!-- #13. Totally Triangle -->
 
     <div></div>
-
     <style>
-
     * {
-        margin: 0;
+        margin:0;
+        background: #0B2429;
     }
-
-    body {
-        background-color: #0B2429;
-    }
-    
     div {
         border-bottom: 140px solid transparent;
         border-left: 140px solid #F3AC3C;
     }
-    
     </style>
 
     <!-------------------------------->
@@ -39,49 +32,29 @@
 
     <div></div>
     <div></div>
-    <div></div>
-    <div></div>
-
     <style>
-
     body {
-        background-color: #F2F2B6;
+        background: #F2F2B6;
         position: relative;
     }
-    
-    div:nth-of-type(1),
-    div:nth-of-type(2),
-    div:nth-of-type(3),
-    div:nth-of-type(4) {
+    div {
         position: absolute;
-        top: 50%;
-        left: 50%;
+    }
+    div,
+    div:nth-of-type(2) {
         border-right: 75px solid transparent;
         border-left: 75px solid transparent;
     }
-
     div:nth-of-type(1) {
-        transform: translate(-140px,-65px);
+        margin: 77px 52px;
         border-top: 130px solid #FF6D00;
-        z-index: 5;
+        filter: drop-shadow(21px 0 0 #FD4602);
     }
-    
     div:nth-of-type(2) {
-        transform: translate(-120px,-65px);
-        border-top: 130px solid #FD4602;
-    }
-    
-    div:nth-of-type(3) {
-        transform: translate(-30px,-65px);
+        margin: 77px 162px;
         border-bottom: 130px solid #FD4602;
-        z-index: 5;
-    }
-
-    div:nth-of-type(4) {
-        transform: translate(-10px,-65px);
-        border-bottom: 130px solid #FF6D00;
-    }
-    
+        filter: drop-shadow(21px 0 0 #FF6D00);
+    } 
     </style>
 
     <!-------------------------------->
@@ -89,50 +62,34 @@
 
     <!-- #15. Overlap -->
 
-    <div></div>
-    <div></div>
-    <div></div>
+    <div>
+        <span></span>
+    </div>
 
     <style>
-
-    body {
-        background-color: #09042A;
+    * {
         position: relative;
+        background: #09042A;
     }
-
-    div:nth-of-type(1),
-    div:nth-of-type(2) {
+    div,
+    span {
         position: absolute;
+    }
+    div {
         width: 150px;
         height: 150px;
-        top: 50%;
-        left: 50%;
+        margin: 67px 67px;
+        background: #7B3F61;
         border-radius: 50%;
-    }
-
-    div:nth-of-type(1) {
-        transform: translate(-125px,-50%);
-        background-color: #7B3F61;
-    }
-
-    div:nth-of-type(2) {
-        transform: translate(-25px,-50%);
-        background-color: #E78481;
+        box-shadow: 100px 0 #E78481;
         overflow: hidden;
     }
-
-    div:nth-of-type(2)::before {
-        content: "";
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        top: 50%;
-        left: 50%;
-        border-radius: 50%;
-        transform: translate(-175px,-50%);
-        background-color: #09042A;
+    span {
+    width: 80px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 15px 100px;
     }
-
     </style>
 
     <!-------------------------------->
@@ -142,161 +99,105 @@
     <div></div>
     <div></div>
     <div></div>
-    <div></div>
-
     <style>
-
-    body {
-        background-color: #0B2429;
+    * {
         position: relative;
+        background: #0B2429;
     }
-    
-    div:nth-of-type(1) {
+    div {
         position: absolute;
+    }
+    div:nth-of-type(1) {
         width: 200px;
         height: 200px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) rotate(135deg);
-        background-color: #998235;
+        margin: 42px 92px;
+        transform: rotate(135deg);
+        background: #998235;
         border-radius: 0 100px;
     }
-
-    div:nth-of-type(2),
-    div:nth-of-type(3),
-    div:nth-of-type(4) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        border-radius: 100%;
-    }
-
     div:nth-of-type(2) {
-        width: 180px;
-        height: 180px;
-        background-color: #0B2429;
-    }
-
-    div:nth-of-type(3) {
         width: 140px;
         height: 140px;
-        background-color: #F3AC3C;
-        z-index: 1;
+        margin: 72px 122px;
+        border-radius: 50%;
+        background: #F3AC3C;
+        box-shadow: 0 0 0 20px #0B2429;
     }
-
-    div:nth-of-type(4) {
+    div:nth-of-type(3) {
         width: 50px;
         height: 50px;
+        margin: 117px 167px;
+        border-radius: 50%;
         background-color: #0B2429;
-        z-index: 2;
     }
-    
     </style>
-
 
     <!-------------------------------->
 
     <!-- #17. Fidget Spinner -->
 
-
-    <div>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
+    <div></div>
+    <span></span>
     <style>
-
-    body {
-        background-color: #09042A; 
+    * {
         position: relative;
+        background: #09042A;
     }
-    
+    div,
+    span {
+        position: absolute;
+    }
     div {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 60px;
-        height: 50px;
-        background-color: #E78481;
-    }
-
-    span:nth-of-type(1),
-    span:nth-of-type(2),
-    span:nth-of-type(3),
-    span:nth-of-type(4) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
         width: 60px;
         height: 60px;
+        margin: 112px 102px;
         border-radius: 50%;
+        background: #09042A;
+        z-index: 2;
+        box-shadow: 0 0 0 10px #E78481,
+                    120px 0 #09042A,
+                    120px 0 0 10px #E78481,
+                    60px -53px #F5BB9C,
+                    60px -53px 0 10px #09042A,
+                    60px 53px #F5BB9C,
+                    60px 53px 0 10px #09042A;
     }
-
-    span:nth-of-type(1) {
-        transform: translate(-150%,-50%);
-        box-shadow: 0 0 0 10px #E78481;
+    span {
+        width: 60px;
+        height: 50px;
+        margin: 116px 162px;
+        background: #E78481;
     }
-
-    span:nth-of-type(2) {
-        transform: translate(50%,-50%);
-        box-shadow: 0 0 0 10px #E78481;
-    }
-
-    span:nth-of-type(3) {
-        transform: translate(-50%,-83px);
-        background-color: #F5BB9C;
-        box-shadow: 0 0 0 10px #09042A;
-    }
-
-    span:nth-of-type(4) {
-        transform: translate(-50%,23px);
-        background-color: #F5BB9C;
-        box-shadow: 0 0 0 10px #09042A;
-    }
-    
     </style>
 
     <!-------------------------------->
 
     <!-- #18. Matrix -->
 
-
     <div></div>
-
     <style>
-
-    body {
-        background-color: #5C434C;
-    }
-
     * {
         margin: 0px;
-        padding: 0px;
+        background: #5C434C;
     }
-    
     div {
         width: 80px;
         height: 80px;
         margin: 10px;
         border-radius: 100% 0 0 0;
-        background-color: #F09462;
-        box-shadow: 100px 0 0 0 #F5D6B4,
-                    200px 0 0 0 #F09462,
-                    300px 0 0 0 #F5D6B4,
-                    0 100px 0 0 #F5D6B4,
-                    100px 100px 0 0 #F09462,
-                    200px 100px 0 0 #F5D6B4,
-                    300px 100px 0 0 #F09462,
-                    0 200px 0 0 #F09462,
-                    100px 200px 0 0 #F5D6B4,
-                    200px 200px 0 0 #F09462,
-                    300px 200px 0 0 #F5D6B4;
+        background: #F09462;
+        box-shadow: 100px 0 #F5D6B4,
+                    200px 0 #F09462,
+                    300px 0 #F5D6B4,
+                    0 100px #F5D6B4,
+                    100px 100px #F09462,
+                    200px 100px #F5D6B4,
+                    300px 100px #F09462,
+                    0 200px #F09462,
+                    100px 200px #F5D6B4,
+                    200px 200px #F09462,
+                    300px 200px #F5D6B4;
     }
-
     </style>
     
     <!-------------------------------->
