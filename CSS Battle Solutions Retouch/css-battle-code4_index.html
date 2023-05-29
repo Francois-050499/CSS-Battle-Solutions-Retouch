@@ -15,143 +15,104 @@
 
     <!-- #21. SitePoint Logo -->
 
-
     <div></div>
     <div></div>
-    <div></div>
-    <div></div>
-
     <style>
-
-    body {
-        background-color: #222;
+    * {
+        background: #222;
         position: relative;
     }
-
-    div {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-    }
-
-    div:nth-of-type(1) {
-        transform: translate(-36px, -88px) rotate(45deg);
-        width: 30px;
-        height: 75px;
-        background-color: #F2994A;
-    }
-
+    div,
     div:nth-of-type(2) {
-        transform: translate(-52px, -39px) rotate(-45deg);
-        width: 30px;
-        height: 80px;
-        background-color: #F2994A;
-        border-radius: 10px 0 5px 0;
-    }
-
-    div:nth-of-type(3) {
-        transform: translate(4px, 13px) rotate(45deg);
+        position: absolute;
         width: 30px;
         height: 75px;
-        background-color: #2D9CDB;
+        background: #F2994A;
     }
-
-    div:nth-of-type(4) {
-        transform: translate(20px, -41px) rotate(-45deg);
+    div::before,
+    div:nth-of-type(2)::before {
+        content: "";
+        position: absolute;
         width: 30px;
         height: 80px;
-        background-color: #2D9CDB;
+        background: #2D9CDB;
         border-radius: 5px 0 10px 0;
+        transform: rotate(90deg);
     }
-
+    div {
+        margin: 54px 155px;
+        transform: rotate(45deg);
+    }
+    div::before {
+        margin: 44px 25px;
+        background: #F2994A;
+    }
+    div:nth-of-type(2) {
+        margin: 154px 197px;
+        transform: rotate(225deg);
+        background: #2D9CDB;
+    }
     </style>
 
     <!-------------------------------->
 
     <!-- #22. Cloud -->
 
-
     <div></div>
     <div></div>
-    <div></div>
-
     <style>
-
-    body {
-        background-color: #F5D6B4;
+    * {
+        background: #F5D6B4;
         position: relative;
     }
-
     div {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        background-color: #D86F45;
+        background: #D86F45;
     }
-
-    div:nth-of-type(1) {
-        transform: translate(-50%, 15px);
+    div {
+        margin: 157px 92px; 
         width: 200px;
         height: 50px;
         border-radius: 0 25px 25px 50px;
     }
-
-    div:nth-of-type(2),
-    div:nth-of-type(3) {
+    div:nth-of-type(2) {
+        margin: 107px 92px;
         width: 100px;
         height: 100px;
-        border-radius: 50px;
+        border-radius: 50%;
+        box-shadow: 80px -30px #D86F45;
     }
-
-    div:nth-of-type(2) {
-        transform: translate(-100px, -35px);
-    }
-
-    div:nth-of-type(3) {
-        transform: translate(-20px, -65px);
-    }
-
     </style>
 
     <!-------------------------------->
 
     <!-- #23. Boxception -->
 
-
     <div></div>
     <div></div>
-
     <style>
-
-    body {
+    * {
         background-color: #F3AC3C;
         position: relative;
     }
-
-    div:nth-of-type(1) {
+    div {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-100px, -100px);
+    }
+    div {
+        margin: 42px 92px;
         width: 100px;
         height: 100px;
-        background-color: #1A4341;
-        box-shadow: 100px 0 0 0 #1A4341,
-                    100px 100px 0 0 #1A4341;
+        background: #1A4341;
+        box-shadow: 100px 0 #1A4341,
+                    0 100px #998235,
+                    100px 100px #1A4341;
     }
-
     div:nth-of-type(2) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-100px, 0px);
+        margin: 192px 142px;
         width: 50px;
         height: 50px;
-        background-color: #998235;
-        box-shadow: 50px 0 0 0 #998235,
-                    0px 50px 0 0 #998235;
+        background: #F3AC3C;
     }
-
     </style>
 
     <!-------------------------------->
@@ -160,41 +121,30 @@
 
     <div></div>
     <div></div>
-
     <style>
-
-    body {
-        background-color: #62306D;
+    * {
+        background: #62306D;
         position: relative;
     }
-    
-    div:nth-of-type(1),
-    div:nth-of-type(2) {
+    div {
         position: absolute;
-        top: 50%;
-        left: 50%;
     }
-
-    div:nth-of-type(1) {
-        width: 100px;
-        height: 100px;
-        background-color: #F7EC7D;
-        transform: translate(-120px,-50%);
-        border-radius: 50%;
-        box-shadow: 140px 0 0 0 #F7EC7D;
-        
-    }
-
-    div:nth-of-type(2) {
+    div {
         width: 100px;
         height: 150px;
-        background-color: #AA445F;
-        transform: translate(-120px,-100px);
-        border-radius: 50px 50px 50px 50px;
-        z-index: -1;
-        box-shadow: 140px 50px 0 0 #E38F66;
+        margin: 42px 72px;
+        background: #AA445F;
+        border-radius: 50px;
+        box-shadow: 140px 50px #E38F66;
     }
-
+    div:nth-of-type(2) {
+        margin: 92px 72px;
+        width: 100px;
+        height: 100px;
+        background: #F7EC7D;
+        border-radius: 50%;
+        box-shadow: 140px 0 #F7EC7D;
+    }
     </style>
 
     <!-------------------------------->
@@ -203,59 +153,43 @@
 
     <div></div>
     <div></div>
-    <div></div>
-    <div></div>
-
     <style>
-
-    body {
-        background-color: #998235;
+    * {
+        background: #998235;
         position: relative;
     }
-    
-    div:nth-of-type(1),
-    div:nth-of-type(2),
-    div:nth-of-type(3),
-    div:nth-of-type(4) {
+    div,
+    div::before {
         position: absolute;
-        top: 50%;
-        left: 50%;
-    }
-
-    div:nth-of-type(1),
-    div:nth-of-type(4) {
         width: 80px;
         height: 100px;
-        background-color: #1A4341;
+        background: #1A4341;
     }
-
     div:nth-of-type(2),
-    div:nth-of-type(3) {
+    div:nth-of-type(2)::before {
+        position: absolute;
         width: 80px;
         height: 60px;
-        background-color: #F3AC3C;
+        background: #F3AC3C;
     }
-    
-    div:nth-of-type(1) {
-        transform: translate(-90px,-90px);
+    div {
+        margin: 52px 102px;
         border-radius: 0 50px;
     }
-
+    div::before {
+        content: "";
+        margin: 80px 100px;
+        border-radius: 50px 0;
+    }
     div:nth-of-type(2) {
-        transform: translate(-90px,30px);
-        border-radius: 0 50px;
+        margin: 172px 102px;
+        border-radius: 0px 50px;
     }
-
-    div:nth-of-type(3) {
-        transform: translate(10px,-90px);
+    div:nth-of-type(2)::before {
+        content: "";
+        margin: -120px 100px;
         border-radius: 50px 0;
     }
-
-    div:nth-of-type(4) {
-        transform: translate(10px,-10px);
-        border-radius: 50px 0;
-    }
-
     </style>
 
     <!-------------------------------->
@@ -263,46 +197,31 @@
     <!-- #26. Smiley   -->
 
     <div></div>
-    <div></div>
-    <div></div>
-
     <style>
-    
-    body {
-        background-color: #6592CF;
+    * {
+        background: #6592CF;
         position: relative;
     }
-    
-    div:nth-of-type(1),
-    div:nth-of-type(2),
-    div:nth-of-type(3) {
+    div,
+    div::before {
         position: absolute;
-        top: 50%;
-        left: 50%;
         width: 80px;
         height: 40px;
         border: 20px solid #060F55;
-        background-color: #6592CF;
+        background: #6592CF;
     }
-
-    div:nth-of-type(1) {
-        border-bottom: transparent;
+    div {
+        margin: 32px;
+        border-bottom: 0;
         border-radius: 100px 100px 0 0;
-        transform: translate(-160px,-110px);
+        -webkit-box-reflect: right 80px;
     }
-
-    div:nth-of-type(2) {
-        border-bottom: transparent;
-        border-radius: 100px 100px 0 0;
-        transform: translate(40px,-110px);
+    div::before {
+        margin: 140px 80px;
+        content: "";
+        border-top: 0;
+        border-radius: 0 0 100px 100px;
     }
-
-    div:nth-of-type(3) {
-        border-top: transparent;
-        border-radius: 0px 0 100px 100px;
-        transform: translate(-60px,50px);
-    }
-    
     </style>
 
     <!-------------------------------->
@@ -310,40 +229,32 @@
     <!-- #27. Lock Up  -->
 
     <div></div>
-
     <style>
-        
-    body {
+    * {
         background-color: #E38F66;
         position: relative;
     }
-
     div,
     div::before {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        background-color: #AA445F;
+        background: #AA445F;
         border-radius: 50%;
     }
-
     div {
-        transform: translate(-50%,-50%);
+        margin: 42px 92px;
         width: 200px;
         height: 200px;
     }
-
     div::before {
         content: "";
-        position: absolute;
-        transform: translate(-50%,-50%) rotate(45deg);
+        transform: rotate(45deg);
+        margin: 30px;
         width: 80px;
         height: 80px;
         border: 30px solid #F7EC7D;
         border-left: 30px solid #AA445F;
         border-right: 30px solid #AA445F;
     }
-
     </style>
 
     <!-------------------------------->
@@ -351,49 +262,38 @@
     <!-- #28. Cups & Balls  -->
 
     <div></div>
-    <div></div>
-    <div></div>
-
     <style>
-
-    body {
-        background-color: #1A4341;
+    * {
         position: relative;
+        background: #1A4341;
     }
-
-    div:nth-of-type(1),
-    div:nth-of-type(2),
-    div:nth-of-type(3) {
+    div,
+    div::before,
+    div::after {
         position: absolute;
-        top: 50%;
-        left: 50%;
+        background: #998235;
         width: 50px;
         height: 50px;
     }
-
-    div:nth-of-type(1) {
-        transform: translate(-130px,-60px);
-        background-color: #998235;
+    div {
+        margin: 82px 62px;
         border-radius: 50%;
-        box-shadow: 210px 0 0 0 #F3AC3C,
-                    70px 70px 0 0 #998235,
-                    140px 70px 0 0 #F3AC3C;
+        box-shadow: 210px 0 #F3AC3C,
+                    70px 70px #998235,
+                    140px 70px #F3AC3C;
     }
-
-    div:nth-of-type(2) {
-        transform: translate(-60px,-60px);
-        background-color: #F3AC3C;
-        border-radius: 50% 50% 0 0;
-        box-shadow: 70px 0 0 0 #998235;
+    div::before {
+        content: "";
+        margin: 0px 140px;
+        border-radius: 50px 50px 0 0;
+        box-shadow: -70px 0 #F3AC3C;
     }
-
-    div:nth-of-type(3) {
-        transform: translate(-130px,10px);
-        background-color: #F3AC3C;
-        border-radius: 0 0 50% 50%;
-        box-shadow: 210px 0 0 0 #998235;
+    div::after {
+        content: "";
+        margin: 70px 210px;
+        border-radius: 0 0 50px 50px;
+        box-shadow: -210px 0 #F3AC3C;
     }
-    
     </style>
     
     <!-------------------------------->

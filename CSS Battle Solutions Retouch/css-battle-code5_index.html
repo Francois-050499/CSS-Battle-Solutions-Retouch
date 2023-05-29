@@ -16,47 +16,28 @@
     <!-- #29. Suffocate -->
 
     <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    
+    <span></span>
     <style>
-    
-    body {
-        background-color: #1A4341;
-        position: relative;
-    }
-
     * {
+        background: #1A4341;
+        position: relative;
         margin: 0;
     }
-
-    div {
+    div,
+    span {
         position: absolute;
         width: 200px;
         height: 150px;
         background-color: #F3AC3C;
+        -webkit-box-reflect: right;
     }
-
-    div:nth-of-type(1) {
+    div {
         border-radius: 0 0 100px 0px;
     }
-
-    div:nth-of-type(2) {
-        transform: translate(0px,150px);
+    span {
+        margin: 150px 0;
         border-radius: 0 100px 0 0;
     }
-
-    div:nth-of-type(3) {
-        transform: translate(200px,0px);
-        border-radius: 0 0 0 100px;
-    } 
-
-    div:nth-of-type(4) {
-        transform: translate(200px,150px);
-        border-radius: 100px 0 0 0px;
-    } 
-    
     </style>
 
     <!-------------------------------->
@@ -65,30 +46,23 @@
 
 
     <div></div>
-    
     <style>
-    
-    body {
-        position: relative;
-        background-color: #F7EC7D;
-    }
-
     * {
         margin: 0;
+        position: relative;
+        background: #F7EC7D;
     }
-
     div {
         position: absolute;
-        transform: translateY(50px);
+        transform:translateY(50px);
         width: 400px;
         height: 50px;
-        background-color: #E38F66;
-        box-shadow: 0 50px 0 0 #AA445F,
-                    0 100px 0 0 #AA445F,
-                    0 150px 0 0 #62306D,
-                    0 200px 0 0 #62306D;
+        background: #E38F66;
+        box-shadow: 0 50px #AA445F,
+                    0 100px #AA445F,
+                    0 150px #62306D,
+                    0 200px #62306D;
     }
-    
     </style>
 
     <!-------------------------------->
