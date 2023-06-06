@@ -111,175 +111,146 @@
 
     <!-- #49. Stay at Home -->
 
-    <div class="roof"></div>
-    <div class="square">
-        <span class="window"></span>
-        <span class="door"></span>
-    </div>
-
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
     <style>
-        body {
-            background-color: #6592CF;
-            position: relative;
-        }
-
-        div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        }
-
-        .roof {
-            transform: translate(-100px, -100px);
-            border-right: 100px solid #6592CF;
-            border-left: 100px solid #6592CF;
-            border-bottom: 100px solid #243D83;
-        }
-
-        .square {
-            transform: translate(-75px, -10px);
-            width: 150px;
-            height: 110px;
-            background-color: #243D83;
-            border-radius: 10px;
-        }
-
-        span {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        }
-
-        .window {
-            transform: translate(-50px, -50px);
-            width: 100px;
-            height: 10px;
-            background-color: #EEB850;
-            border-radius: 10px;
-        }
-
-        .door {
-            transform: translate(-25px, 5px);
-            width: 50px;
-            height: 50px;
-            background-color: #EEB850;
-            border-radius: 10px 10px 0 0
-        }
+    * {
+        background: #6592CF;
+        position: relative;
+    }
+    div {
+        position: absolute;
+        -webkit-box-reflect: right;
+    }
+    div:nth-of-type(1) {
+        margin: 42px 92px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 100px 100px;
+        border-color: #6592CF #6592CF #243D83 #6592CF;
+    }
+    div:nth-of-type(2) {
+        width: 75px;
+        height: 110px;
+        background: #243D83;
+        margin: 132px 117px;
+        border-radius: 0 0 0 10px;
+    } 
+    div:nth-of-type(3) {
+        width: 50px;
+        height: 10px;
+        background: #EEB850;
+        margin: 137px 142px;
+        border-radius: 10px 0 0 10px;
+    }
+    div:nth-of-type(4) {
+        width: 25px;
+        height: 50px;
+        background-color: #EEB850;
+        margin: 192px 167px;
+        border-radius: 10px 0 0 0;
+    }
     </style>
 
     <!-------------------------------->
 
     <!-- #50. Use Hand Sanitizer -->
 
-    <div class="bottle">
-        <span class="bottle-mark">
-            <span class="bottle-parts"></span>
-            <span class="bottle-tips"></span>
-            <span class="mark-one"></span>
-            <span class="mark-two"></span>
-        </span>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> 
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-
-    <div class="bottle-push">
-        <span class="bottle-enter"></span>
-        <span class="bottle-drops"></span>
-    </div>
-
     <style>
-        body {
-            background-color: #1A4341;
-            position: relative;
-        }
-
-        div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        }
-
-        .bottle {
-            transform: translate(-50%, -40px);
-            width: 100px;
-            height: 140px;
-            background-color: #F3AC3C;
-            border-radius: 20px;
-        }
-
-        span {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        }
-
-        .bottle-mark {
-            transform: translate(-50%, -10px);
-            width: 100px;
-            height: 80px;
-            background-color: #998235;
-            border-radius: 0px 0px 20px 20px;
-        }
-
-        .mark-one,
-        .mark-two {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-
-        .mark-one {
-            transform: translate(-50px, -70px);
-            background-color: #998235;
-        }
-
-        .mark-two {
-            transform: translate(0px, -70px);
-            background-color: #F3AC3C;
-        }
-
-        .bottle-parts {
-            transform: translate(-50%, -120px);
-            width: 50px;
-            height: 50px;
-            background-color: #F3AC3C;
-            border-radius: 10px 10px 0 0;
-        }
-
-        .bottle-tips {
-            transform: translate(-50%, -140px);
-            width: 20px;
-            height: 20px;
-            background-color: #F3AC3C;
-        }
-
-        .bottle-push {
-            transform: translate(-50px, -100px);
-            width: 150px;
-            height: 20px;
-            background-color: #F3AC3C;
-            border-radius: 20px 20px 0 20px;
-        }
-
-        .bottle-enter {
-            transform: translate(55px, 0px);
-            width: 20px;
-            height: 30px;
-            background-color: #F3AC3C;
-            border-radius: 20px;
-        }
-
-        .bottle-drops {
-            transform: translate(55px, 40px);
-            width: 20px;
-            height: 20px;
-            background-color: #998235;
-            border-radius: 20px;
-            box-shadow: 0 30px 0 0 #998235;
-        }
+    * {
+        background: #1A4341;
+        position: relative;
+    }
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-40px);
+        width: 100px;
+        height: 140px;
+        background: #F3AC3C;
+        border-radius: 20px;
+    }
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    span {
+        transform: translate(-50%,-10px);
+        width: 100px;
+        height: 80px;
+        background: #998235;
+        border-radius: 0px 0px 20px 20px;
+    }
+    span:nth-child(2),
+    span:nth-child(3) {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    span:nth-child(2) {
+        margin: -30px -25px;
+        background: #998235;
+    }
+    span:nth-child(3) {
+        margin: -30px 25px;
+        background: #F3AC3C;
+        z-index:2;
+    }
+    span:nth-child(4){
+        width: 50px;
+        height: 50px;
+        background: #F3AC3C;
+        margin: -80px 0px;
+        border-radius: 10px 10px 0 0;
+    }
+    span:nth-child(5) {
+        width: 20px;
+        height: 40px;
+        background: #F3AC3C;
+        margin: -100px 0px;
+    }
+    span:nth-child(6) {
+        width: 150px;
+        height: 20px;
+        background: #F3AC3C;
+        margin: -120px 25px;
+        border-radius: 20px 20px 0 20px;
+    }
+    span:nth-child(7) {
+        width: 20px;
+        height: 30px;
+        background: #F3AC3C;
+        margin: -110px 90px;
+        border-radius: 20px;
+    }
+    span:nth-child(8) {
+        margin: -70px 90px;
+        width: 20px;
+        height: 20px;
+        background: #998235;
+        border-radius: 20px;
+        box-shadow: 0 30px #998235;
+    }
     </style>
 
-    <!-------------------------------->
+<!-------------------------------->
 
-    <!-- #51. Wear a Mask -->
+<!-- #51. Wear a Mask -->
 
     <div>
         <span></span>
