@@ -16,76 +16,63 @@
 
     <div></div>
     <div></div>
-    <div></div>
-    <div></div>
     <span></span>
-
     <style>
-        body {
-            background-color: #1A4341;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        div {
-            width: 100px;
-            height: 100px;
-            background-color: #F3AC3C;
-            border-radius: 50%;
-        }
-
-        div:nth-of-type(1),
-        div:nth-of-type(2),
-        div:nth-of-type(3) {
-            position: absolute;
-            background-color: #998235;
-            border-radius: 50%;
-        }
-
-        div:nth-of-type(1) {
-            transform: translate(-15px, -15px);
-            width: 30px;
-            height: 30px;
-        }
-
-        div:nth-of-type(2) {
-            transform: translate(0px, 25px);
-            width: 20px;
-            height: 20px;
-        }
-
-        div:nth-of-type(3) {
-            transform: translate(25px, -25px);
-            width: 10px;
-            height: 10px;
-        }
-
-        span,
-        span::before,
-        span::after {
-            position: absolute;
-            width: 10px;
-            height: 180px;
-            background-color: #F3AC3C;
-            z-index: -1;
-            border-radius: 5px;
-        }
-
-        span {
-            transform: translate(0px, -10px);
-        }
-
-        span::before {
-            content: "";
-            transform: translate(9px, 5px) rotate(60deg);
-        }
-
-        span::after {
-            content: "";
-            transform: translate(9px, 15px) rotate(-60deg);
-        }
+    * {
+        position: relative;
+        background: #1A4341;
+    }
+    div:nth-of-type(1) {
+        width: 100px;
+        height: 100px;
+        background: #F3AC3C;
+        border-radius: 50%;
+        margin: 92px 142px;
+    }
+    div:nth-of-type(2) {
+        margin: 42px 187px;
+    }
+    div,
+    div:nth-of-type(2)::before,
+    div:nth-of-type(2)::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 180px;
+        background: #F3AC3C;
+        border-radius: 50px;
+    }
+    div:nth-of-type(2)::before {
+        margin: 4px 9px;
+        transform: rotate(60deg);
+    }
+    div:nth-of-type(2)::after {
+        margin: 15px 9px;
+        transform: rotate(-60deg);
+    }
+    span,
+    span::before,
+    span::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: #998235;
+    }
+    span {
+        width: 30px;
+        height: 30px;
+        margin: 112px 162px;
+    }
+    span::before {
+        width: 20px;
+        height: 20px;
+        margin: 45px 20px;
+    }
+    span::after {
+        width: 10px;
+        height: 10px;
+        margin: 0px 50px;
+    }
     </style>
 
     <!-------------------------------->
